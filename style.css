@@ -14,6 +14,7 @@ header{
     justify-content: space-between;
     max-width: 1440px;
     margin: 0px auto;
+    padding: 50px 0px 100px 0px;
 }
 .nav ul{
     display: flex;
@@ -34,4 +35,69 @@ header{
     font-weight: 500;
     line-height: 26px;
     color: #424242;
+    cursor: pointer;
+}
+.nav ul :hover{
+    color: #FF900E;
+    transition-duration: 0.5s;
+}
+.hero{
+    max-width: 1440px;
+    margin: 0px auto;
+}
+.hero-title{
+    font-family: "Work Sans";
+    text-align: center;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #131313;
+    max-width: 862px;
+    margin: 0px auto;
+}
+.hero-dec{
+    color: var(--Dark-03, #727272);
+    text-align: center;
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    max-width: 862px;
+    margin: 0px auto;
+}
+.hero-btn{
+    display: flex;
+    justify-content: center;
+    margin: 32px 0px 50px 0px;
+}
+.hero-btn button{
+    padding: 20px 25px;
+    background-color: #FF900E;
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+
+}
+.hero-img{
+    width: 100%;
+    margin-bottom: 45px;
+}
+@media screen and (max-width: 576px) {
+    .nav{
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 0px 50px 0px;
+    }
+    .nav ul{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .hero-title{
+        font-size: 32px;
+        line-height: 40px;
+    }
 }
