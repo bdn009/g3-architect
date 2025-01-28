@@ -1,8 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 *{
     margin: 0;
     padding: 0;
 }
+body{
+    font-family: "Work Sans";
+}
 header{
-    background-color: #FF900E;
-    height: 100px;
+    background-color: rgba(255, 144, 14, 0.10);
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1440px;
+    margin: 0px auto;
+}
+.nav ul{
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+    align-items: center;
+}
+.nav-title{
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #131313;
+}
+.nav ul li{
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    color: #424242;
 }
