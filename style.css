@@ -86,6 +86,90 @@ header{
     width: 100%;
     margin-bottom: 45px;
 }
+main{
+    max-width: 1440px;
+    margin: 0px auto;
+}
+/* team section */
+.team{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 100px 0px;
+}
+.team-img-1{
+    grid-area: team-img-1;
+}
+.team-img-2{
+    grid-area: team-img-2;
+}
+.team-img-3{
+    grid-area: team-img-3;
+}
+.team-img-4{
+    grid-area: team-img-4;
+}
+.team-img{
+    display: grid;
+    grid-template-areas:
+    'team-img-1 team-img-2'
+    'team-img-3 team-img-4';
+    gap: 25px;
+}
+.team-img img{
+    width: 100%;
+}
+.team-info{
+    max-width: 40%;
+    margin: 30px 0px;
+}
+.team-title{
+    font-size: clamp(1.8rem, 10vw, 2.8rem);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: #727272;
+    max-width: 862px;
+    margin: 0px auto;
+}
+.team-title span{
+    font-size: clamp(1.8rem, 10vw, 2.8rem);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #131313;
+    max-width: 862px;
+    margin: 0px auto;
+}
+.team-title-2{
+    font-size: clamp(1.8rem, 10vw, 2.8rem);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #FF900E;
+    max-width: 862px;
+    margin: 0px auto;
+}
+.team-dec{
+    color: var(--Dark-03, #727272);
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    max-width: 862px;
+    margin: 20px 0px;
+}
+.team-btn button{
+    padding: 20px 25px;
+    background-color: #FF900E;
+    color: white;
+    font-size: clamp(0.5rem, 4vw, 1rem);
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+     
+}
 @media screen and (max-width: 576px) {
     .nav{
         flex-direction: column;
@@ -100,4 +184,19 @@ header{
         font-size: 32px;
         line-height: 40px;
     } */
+    .team{
+        flex-direction: column;
+        text-align: center;
+    }
+    .team-img{
+        grid-template-areas:
+        'team-img-1'
+        'team-img-2'
+        'team-img-3'
+        'team-img-4';
+        gap: 20px;
+    }
+    .team-info{
+        max-width: 100%;
+    }
 }
