@@ -186,6 +186,7 @@ main{
 .features{
     display: flex;
     gap: 140px;
+    margin: 70px 0px;
 }
 
 .features-card{
@@ -240,6 +241,14 @@ main{
     text-align: center;
 }
 
+.facts-title{
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #131313;
+}
+
 @media screen and (max-width: 576px) {
     .nav{
         flex-direction: column;
@@ -268,12 +277,13 @@ main{
     .features{
         flex-direction: column;
         gap: 50px;
+        margin: 0px;
     }
     .architect{
         width: 100%;
     }
     .experience-btn{
-        margin: 0px 0px;
+        margin: 20px 0px;
 
     }
     .architect-experience{
