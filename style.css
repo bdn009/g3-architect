@@ -64,7 +64,7 @@ header{
     font-weight: 400;
     line-height: 26px;
     max-width: 862px;
-    margin: 0px auto;
+    margin: 20px auto;
 }
 .hero-btn{
     display: flex;
@@ -286,6 +286,33 @@ main{
     font-weight: 600;
     line-height: normal;
 }
+.sponsors-img{
+    display: flex;
+    justify-content: space-between;
+    margin: 90px 0px;   
+}
+.sponsors-img img{
+    filter: grayscale(100%);
+}
+.sponsors-img img:hover{
+    filter: grayscale(0%);
+    transition-duration: 0.5s;
+}
+footer{
+    max-width: 1440px;
+    margin: 0px auto;
+    background-color: #FFF4E7;
+}
+footer p{
+    color: var(--Dark-02, #424242);
+    text-align: center;
+    font-family: "Work Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 40px  0px;
+}
 @media screen and (max-width: 576px) {
     .nav{
         flex-direction: column;
@@ -343,5 +370,10 @@ main{
     }
     .stats-card{
         margin: 0px auto;
+    }
+    .sponsors-img{
+        flex-direction: column;
+        gap: 30px;
+        margin: 50px 70px ;
     }
 }
