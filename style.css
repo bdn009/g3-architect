@@ -169,6 +169,77 @@ main{
     cursor: pointer;
      
 }
+.team-btn button:hover{
+    box-shadow: 0px 10px 25px rgba(77, 77, 77, 0.2);
+    transition-duration: 0.7s;
+    scale: 1.02;
+}
+.section-title{
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #131313;
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+.features{
+    display: flex;
+    gap: 140px;
+}
+
+.features-card{
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0px 10px 25px rgba(77, 77, 77, 0.1);
+    margin-bottom: 20px;
+}
+.features-card:hover{
+    box-shadow: 0px 10px 25px rgba(77, 77, 77, 0.2);
+    transition-duration: 0.7s;
+    scale: 1.02;
+}
+.card-title{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.experience-btn{
+    padding: 20px 25px;
+    background-color: #FF900E;
+    color: white;
+    
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: -90px;
+    margin-left: -92px;
+}
+.experience-btn:hover{
+    box-shadow: 0px 10px 25px rgba(77, 77, 77, 0.2);
+    transition-duration: 0.7s;
+    scale: 1.02;
+}
+.experience-btn-title{
+    color: #FFF;
+    text-align: center;
+    font-family: "Work Sans";
+    font-size: clamp(2.8rem, 10vw, 4rem);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 70px; /* 107.692% */
+}
+.experience-btn-dec {
+    color: #FFF;
+    font-family: "Work Sans";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+    text-align: center;
+}
+
 @media screen and (max-width: 576px) {
     .nav{
         flex-direction: column;
@@ -179,10 +250,6 @@ main{
         flex-direction: column;
         gap: 10px;
     }
-    /* .hero-title{
-        font-size: 32px;
-        line-height: 40px;
-    } */
     .team{
         flex-direction: column;
         text-align: center;
@@ -197,5 +264,24 @@ main{
     }
     .team-info{
         max-width: 100%;
+    }
+    .features{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .architect{
+        width: 100%;
+    }
+    .experience-btn{
+        margin: 0px 0px;
+
+    }
+    .architect-experience{
+        display: flex;
+        justify-content: center;
+        margin: 20px 0px;
+    }
+    .section-title{
+        font-size: 32px;
     }
 }
