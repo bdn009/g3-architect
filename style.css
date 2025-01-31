@@ -400,4 +400,7 @@ footer p{
         gap: 30px;
         margin: 50px 70px ;
     }
+    .team-img{
+        animation: none;
+    }
 }
