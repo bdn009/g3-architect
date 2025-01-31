@@ -114,6 +114,18 @@ main{
     'team-img-1 team-img-2'
     'team-img-3 team-img-4';
     gap: 25px;
+    animation-duration: 1.6s;
+    animation-name: slidein;
+}
+@keyframes slidein{
+    from{
+        margin-right: 100px;
+        opacity: 0;
+    }
+    to{
+        margin-right: 0px;
+        opacity: 1;
+    }
 }
 .team-img img{
     width: 100%;
@@ -121,6 +133,18 @@ main{
 .team-info{
     max-width: 40%;
     margin: 30px 0px;
+    animation-duration: 1.6s;
+    animation-name: slidein;
+}
+@keyframes slidein{
+    from{
+        margin-left: 100px;
+        opacity: 0;
+    }
+    to{
+        margin-left: 0px;
+        opacity: 1;
+    }
 }
 .team-title{
     font-size: clamp(1.8rem, 10vw, 2.8rem);
